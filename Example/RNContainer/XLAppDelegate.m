@@ -7,12 +7,15 @@
 //
 
 #import "XLAppDelegate.h"
+#import "RNContainer.h"
 
 @implementation XLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[RNContainer alloc] viewControllerByRoute:@"Hybrid"];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

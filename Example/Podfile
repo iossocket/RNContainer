@@ -1,13 +1,5 @@
-use_frameworks!
-
-platform :ios, '8.0'
+platform :ios, '10.0'
 
 target 'RNContainer_Example' do
   pod 'RNContainer', :path => '../'
-
-  target 'RNContainer_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

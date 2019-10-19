@@ -1,9 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = 'RNContainer'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RNContainer.'
-  s.description      = <<-DESC
-                       DESC
+  s.summary          = 'React Native Container'
+  s.description      = 'Description of RNContainer'
 
   s.homepage         = 'https://github.com/iossocket/RNContainer'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
