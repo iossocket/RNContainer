@@ -10,7 +10,11 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/iossocket/RNContainer.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
-  s.source_files = 'RNContainer/Classes/**/*'
+  s.source_files = 'RNContainer/Classes/**/*.{h,m,mm}'
+  s.public_header_files = 'RNContainer/Classes/RNContainer.h'
+  s.static_framework = true
+  s.libraries = 'stdc++'
+  s.frameworks = 'Accelerate', 'AudioToolbox', 'CoreTelephony', 'JavaScriptCore', 'MobileCoreServices', 'SystemConfiguration'
   
   s.dependency 'FBLazyVector'
   s.dependency 'FBReactNativeSpec'
